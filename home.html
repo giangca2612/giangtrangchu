@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web của giang</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    .container {
+      width: 100%;
+      margin-top: 0.5%;
+    }
+    .circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #ccc;
+      border: 2px solid rgb(223, 218, 218);
+      box-shadow: 0 0 30px rgba(72, 65, 65, 0.5);
+    }
+    h2 {
+      margin: 0;
+    }
+    .inner-container {
+      display: flex;
+      justify-content: left;
+      background-color: #FDF5E6;
+      align-items: center;
+      text-align: center;
+    }
+    .canh{
+        margin-left: 20%;
+    }
+    .cuoi {
+    display: flex;
+    justify-content: center;
+    background-color: #3faa49;
+    align-items: center;
+    text-align: center;
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 3%;
+  }
+
+  /* CSS cho menu */
+  .menu {
+      display: none; /* Ẩn menu ban đầu */
+    }
+
+    /* CSS cho nút mở menu */
+    .toggle-button {
+      cursor: pointer;
+    }
+    /* CSS cho bảng */
+    .table-container {
+      display: none; /* Ẩn bảng ban đầu */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="inner-container">
+      <img class="circle" style="margin-left: 3%;" src="https://scontent.fsgn20-1.fna.fbcdn.net/v/t39.30808-6/363325452_1464980147649532_6514045481528079895_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=9TgfO2jmRI8AX-k00_d&_nc_ht=scontent.fsgn20-1.fna&oh=00_AfB5TEB15lKvH3iSaTdO2HdyYmmUTDkiMXjmpZ2MOU1MQw&oe=64EDD8CF"/>
+        <div class="canh">
+            <h2>Trường: Cao Đẳng FPT PolyTechnic</h2>
+           
+            <b>Họ Tên: Phạm Thanh Giang</b>
+            <br>
+            <b>Số điện thoại: 0337862050</b>
+            <br>
+            <b>Email: </b>
+            <b><a style="text-decoration: none;" href="https://mail.google.com/mail/u/0/#inbox?compose=fwmvGMCjkcbPxnNBtcFjCcNkSsLGVbfkLPwtqCBQlNNFSvzzxpnDVZQmVNPnhKXJxbxdWJCCDZwDPWzBlkzrWMNhtKfJsqMnsVfhTMvhMJLFbKspcSbq">giangca2612@gmail.com</a></b>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: left; margin-top: 2%;">
+
+                <!-- Nút mở menu -->
+        <div class="toggle-button" onclick="toggleMenu()"><img style="width: 50px; margin-left: 1%;" src="image/menuicon.png"/></div>
+
+        <!-- Menu -->
+        <div class="menu">
+            <!-- Nội dung menu -->
+            <ul>
+            <li><a href="#" style="text-decoration: none;" onclick="showTable()">Sở thích</a></li>
+            <li><a href="#" style="text-decoration: none;" onclick="showTinhcach()">Tính cách</a></li>
+            </ul>
+        </div>
+
+        <!-- Bảng "Sở thích" -->
+        <div class="table-container" style="margin-left: 3%;">
+            <table>
+            <tr>
+                <th>Sở thích</th>
+            </tr>
+            <tr>
+                <td>Chơi thể thao,</td>
+                <td>Chơi game,</td>
+                <td>Tìm tòi, khám phá,...</td>
+            </tr>
+            </table>
+        </div>
+
+        <!-- Bảng "Tính cách" -->
+        <div class="table-tinhcach table-container" style="margin-left: 3%;">
+            <table>
+            <tr>
+                <th>Tính cách</th>
+            </tr>
+            <tr>
+                <td>Hòa đồng,</td>
+                <td>Trầm tính,</td>
+                <td>Vui vẻ,</td>
+                <td>Dễ gần</td>
+            </tr>
+            </table>
+        </div>
+
+        <script>
+            function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.style.display = (menu.style.display === 'none') ? 'block' : 'none';
+            }
+
+            function showTable() {
+            var table = document.querySelector('.table-container');
+            table.style.display = 'block';
+            }
+
+            function showTinhcach() {
+            var table = document.querySelector('.table-tinhcach');
+            table.style.display = 'block';
+            }
+        </script>
+
+        <img style="width: 300px; border-radius: 50%; margin-left: 10%;" src="https://scontent.fsgn20-1.fna.fbcdn.net/v/t39.30808-6/336284221_687121163094772_8798714961280435654_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_ohc=CUNNG8z0Ft4AX_pZoaK&_nc_ht=scontent.fsgn20-1.fna&oh=00_AfCBEHj7uhVAWq2uVSRYpW-zc2HADNJxDmHqcvyCK4nCww&oe=64EF1036"/>
+
+    </div>
+
+            <div class="cuoi">
+                <a style="align-items: center;" href="https://github.com/dashboard">
+                    <img style="width: 50px;" src="image/github.png"/>
+                </a>
+                <a href="https://www.facebook.com/cuctrinho">
+                    <img style="width: 50px; margin-left: 5%;" src="image/facebookk.png"/>
+                </a>
+                <a href="https://console.firebase.google.com/u/0/?pli=1">
+                    <img style="width: 50px; margin-left: 5%;" src="image/firebase.png"/>
+                </a>
+            </div>
+  
+  </div>
+  
+</body>
+</html>
